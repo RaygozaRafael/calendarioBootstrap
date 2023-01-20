@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <main class="container bg-info vh-100 min-flex ">
+        <div class="sub-general text-center container bg-success ms-3 me-3 rounded-5 min-hw-350"
+            style="height: vh-100; min-width: 300px; max-width: 600px;">
+            <div class="cabecera row ">
+                <div class="header">
+                    <h1>Calcular el dia con Bootstrap</h1>
+                </div>
+            </div>
+            <div class="cuerpo row min-flex">
+                <div class="body container col-12 bg-warning rounded-5">
+                    <div class="calculadora container border bg-primary rounded-5 mt-3 mb-3">
+                        <div class="display rounded-1 bg-dark text-white  m-2">
+                            <div id="datosIngresados" class=" row min-flex m-2" style="text-align: center;">
+
+                                <label  class=" m-1 rounded-pill col-11 col-sm-3" for="text">Dia</label>
+                                <label  class=" m-1 rounded-pill col-11 col-sm-3" for="text">Mes</label>
+                                <label  class=" m-1 rounded-pill col-11 col-sm-3" for="text">Año</label>
+
+                                <input id="dia" type="text" class="col-11  col-sm-3" placeholder="DD">
+
+                                <input id="mes" type="text" class="col-11 col-sm-3" placeholder="MM">
+
+                                <input id="anio" type="text" class="col-11 col-sm-3" placeholder="AAAA">
+
+                            </div>
+
+                            <div id="botones" class="row min-flex mb-2" style="text-align: center;">
+
+                                <button id="btnCalcularFecha" class="btnOperador col-2 col-sm-2" onclick="checarFechaManualmente()">Calcular fecha</button>
+                                
+
+                            </div>
+
+                            <div id="valorDatosIngresados" class="row min-flex mb-2" style="text-align: center;">
+
+                                <label class="operador m-1 rounded-pill col-11 col-sm-5" for="text">El dia es</label>
+                                <label class="operador m-1 rounded-pill col-11 col-sm-5" for="text">El año </label>
+
+                                <input id="diaSemana" type="text" class="col-11 col-sm-5" placeholder="Lunes - Domingo" readonly>
+                                
+                                <input id="bis" type="text" class="col-11 col-sm-5" placeholder="Lunes - Domingo" readonly>
+                                
+
+                            </div>
+
+                            
+
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="pie row ">
+                <div class="footer">
+                    Raygoza Zamudio Rafael
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
