@@ -108,6 +108,7 @@ function verificarMaximoDiasMes(dia, mes, anio) {
             break;
 
     }
+    return true;
 }
 
 function detectarDiaSemana(dia) {
